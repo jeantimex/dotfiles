@@ -15,8 +15,8 @@ saga.init_lsp_saga({
   definition_action_keys = {
     edit = "<CR>",
   },
-  -- disable code action prompt
-  code_action_prompt = {
+  -- disable code action lightbulb
+  code_action_lightbulb = {
     enable = false,
   },
 })
