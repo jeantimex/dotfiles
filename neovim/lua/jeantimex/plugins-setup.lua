@@ -96,6 +96,7 @@ return packer.startup(function(use)
     end,
   })
 
+  -- Tabs
   use({
     "romgrk/barbar.nvim",
     requires = { "kyazdani42/nvim-web-devicons" },
