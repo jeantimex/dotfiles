@@ -7,6 +7,22 @@ local opts = { noremap = true, silent = true }
 
 keymap.set("i", "jk", "<ESC>")
 
+-- disable arrow keys in normal and insert modes
+keymap.set("n", "<Right>", "<Nop>")
+keymap.set("n", "<Left>", "<Nop>")
+keymap.set("n", "<Down>", "<Nop>")
+keymap.set("n", "<Up>", "<Nop>")
+
+keymap.set("i", "<Right>", "<Nop>")
+keymap.set("i", "<Left>", "<Nop>")
+keymap.set("i", "<Down>", "<Nop>")
+keymap.set("i", "<Up>", "<Nop>")
+
+keymap.set("i", "<C-h>", "<Left>")
+keymap.set("i", "<C-l>", "<Right>")
+keymap.set("i", "<C-k>", "<Up>")
+keymap.set("i", "<C-j>", "<Down>")
+
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 keymap.set("n", "x", '"_x')
