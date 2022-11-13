@@ -7,6 +7,9 @@ local opts = { noremap = true, silent = true }
 
 keymap.set("i", "jk", "<ESC>")
 
+keymap.set("v", ";", ":")
+keymap.set("n", ";", ":")
+
 -- disable arrow keys in normal and insert modes
 keymap.set("n", "<Right>", "<Nop>")
 keymap.set("n", "<Left>", "<Nop>")
