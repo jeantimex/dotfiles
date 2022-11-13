@@ -39,4 +39,14 @@ treesitter.setup({
   },
   -- auto install above language parsers
   auto_install = true,
+  -- enable incremental selection
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "<C-w>",
+      node_incremental = "<C-w>",
+      scope_incremental = "<S-w>",
+      node_decremental = "<S-w>",
+    },
+  },
 })
