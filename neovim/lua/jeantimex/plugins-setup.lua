@@ -112,6 +112,9 @@ return packer.startup(function(use)
   -- Surround
   use("kylechui/nvim-surround") -- surround characters on word
 
+  -- Indent blankline
+  use("lukas-reineke/indent-blankline.nvim")
+
   if packer_bootstrap then
     require("packer").sync()
   end
